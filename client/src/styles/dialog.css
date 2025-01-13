@@ -1,0 +1,12 @@
+dialog{
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+}    
+
+.closeButton{
+    color: grey;
+    background-color: white;
+    border: none;
+
+}

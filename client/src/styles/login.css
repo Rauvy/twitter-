@@ -1,0 +1,124 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #e7e9ea; /* Light gray text for dark mode */
+  }
+  
+  .vh-100 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .x-logo {
+    width: 250px;
+    height: 250px;
+  }
+  
+  /* Right Section */
+  .right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .header-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .header-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Buttons */
+  .buttons-container {
+    width: 100%;
+  }
+  
+  .google-sign-in,
+  .apple-sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #e7e9ea;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .google-sign-in:hover,
+  .apple-sign-in:hover {
+    background-color: #333;
+  }
+  
+  .button-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  /* Divider */
+  .divider {
+    text-align: center;
+    width: 100%;
+    color: #71767b;
+    margin: 20px 0;
+  }
+  
+  /* Create Account Button */
+  .create-account {
+    width: 100%;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .create-account:hover {
+    background-color: #198fda;
+  }
+  
+  /* Login Link */
+  .login-container {
+    text-align: left;
+  }
+
+  .signup {
+    width: 100%;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
