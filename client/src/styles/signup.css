@@ -9,3 +9,9 @@ p{
     height: 650px;
     min-width: 600px;
 }
+
+.next-button{
+    border: none;
+    border-radius: 16px;
+    width: 80%;
+}

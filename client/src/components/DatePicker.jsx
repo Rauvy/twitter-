@@ -7,7 +7,9 @@ function DatePicker(){
 
     const days = Array.from({ length: 31 }, (_, index) => index + 1);
 
-    const months = Array.from({ length: 12 }, (_, index) => index + 1);
+    const months = Array.from({ length: 12 }, (_, index) => 
+        new Date(0, index).toLocaleString('default', {month: 'long'})
+    );
 
     const currentYear = new Date().getFullYear();
     const years = Array.from({ length: currentYear - 1900 + 1 }, (_, index) => 1900 + index);

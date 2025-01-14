@@ -70,7 +70,7 @@ function Login() {
       </div>
       <Dialog toggleDialog={toggleDialog} ref={dialogRef}>
           {dialogContent}
-    </Dialog>
+      </Dialog>
     </div>
   );
 }

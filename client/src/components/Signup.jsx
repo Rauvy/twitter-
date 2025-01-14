@@ -19,6 +19,7 @@ function Signup() {
             <input type='text' placeholder='Name'></input>
             <input type='text' placeholder='Email'></input>
             <DatePicker />
+            <button className='next-button'>Next</button>
         </div>
     );
 }
