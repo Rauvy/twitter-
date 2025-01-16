@@ -1,7 +1,6 @@
 import react from 'react';
 import DatePicker from './DatePicker';
-import '../styles/signup.css';
-
+import "../../public/styles/signup.css";
 function Signup() {
     return (
         <div className='signUp'>

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faApple, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Dialog from './Dialog';
 import Signup from './Signup';
-import "../styles/login.css";
+import "../../public/styles/login.css";
 
 function Login() {
   const [dialogContent, setDialogContent] = useState(null);

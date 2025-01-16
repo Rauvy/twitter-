@@ -1,5 +1,5 @@
 import react, { forwardRef } from 'react';
-import '../styles/dialog.css';
+import "../../public/styles/dialog.css";
 
 const Dialog = forwardRef((props, ref) => {
     const { children, toggleDialog } = props;
