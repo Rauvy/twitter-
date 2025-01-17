@@ -1,8 +1,11 @@
 import react from "react";
+import NavBarElement from "./NavBarElement";
 
 function NavBar(){
     return(
-        <div>NavBar</div>
+        <>
+            <NavBarElement />
+        </>
     );
 }
 
