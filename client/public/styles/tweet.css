@@ -1,0 +1,28 @@
+.tweet-container {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.profilePicture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    width: 600px;
+    height: 335px;
+}
+
+.tweetActions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

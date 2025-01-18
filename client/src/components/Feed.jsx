@@ -1,8 +1,9 @@
 import react from 'react';
+import Tweet from './Tweet';
 
 function Feed() {
     return(
-        <div>Feed</div>
+        <Tweet />
     );
 }
 
