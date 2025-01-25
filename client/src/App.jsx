@@ -7,8 +7,8 @@ import './App.css';
 function App() {
   return (
     //<Login />
-    //<Home />
-    <Profile />
+    <Home />
+    //<Profile />
   );
 }
 

@@ -1,0 +1,14 @@
+.feed {
+    flex: 1;
+    background-color: #192734;
+    color: white;
+    overflow-y: scroll;
+  }
+  
+  .feed-header {
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #38444d;
+  }
+  

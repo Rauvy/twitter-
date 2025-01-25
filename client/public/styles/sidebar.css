@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #15202b;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    min-width: 200px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sidebar li i {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
