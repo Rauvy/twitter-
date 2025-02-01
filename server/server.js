@@ -8,6 +8,9 @@ dotenv.config(); // load environment variables from .env file
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json()); //for parsing req.body
+app.use(express.urlencoded({ extended: true })); //parse form data (urlencoded)
+
 //connecting middleware to process auth routes
 app.use("/api/auth", authRoutes); // it's like collection of similar routes, so the code remains clean and managable
 
