@@ -59,13 +59,42 @@ export const signup = async (req, res) => { //this is the function we will execu
 }
 
 export const login = async (req, res) => {
-    res.json({
-        data: "You hit the login endpoint",
-    });
+    try {
+       
+        const { username, password } = req.body;
+        const user = await User.findOne({username});
+        const isPasswordCorrect = await bcrypt.compare(password, user?.password || ""); //you have to add this, bcrypt will throw an error if 
+        //user password will be undefined, so we tell it to at least compare it to an empty string
+
+        if (!user || !isPasswordCorrect){
+            return res.status(400).json({error: "Invalid username or password"});
+        }
+
+        generateTokenAndSetCookie(user._id, res);
+
+        res.status(200).json({
+           _id: user._id,
+           fullName: user.fullName,
+           username: user.username,
+           email: user.email,
+           followers: user.followers,
+           following: user.following,
+           profileImg: user.profileImg, 
+           coverImg: user.coverImg,
+        });
+
+    } catch (error) {
+      console.log("Error in the login controller", error.message);
+      res.status(500).json({ error: "Internal Server Error" });  
+    }
 }
 
 export const logout = async (req, res) => {
-    res.json({
-        data: "You hit the logout endpoint",
-    });
+    try {
+        res.cookie("jwt", "", {maxAge:0});
+        res.status(200).json({message: "Logout successfully"});
+    } catch (error) {
+        conaole.log("Error in the logout controller", error.message);
+        res.status(500).json({error: "Internal Server Error"});
+    }
 }
