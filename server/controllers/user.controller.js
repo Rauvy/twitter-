@@ -144,7 +144,7 @@ export const updateUser = async (req, res) => {
 
         user = await user.save();
 
-        user.password = null; //just updates in the response unless you save it
+        user.password = null; //just updates in the response unless you save it to db
 
         return res.status(200).json(user);
     } catch (error) {

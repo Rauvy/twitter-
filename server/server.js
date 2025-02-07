@@ -6,6 +6,7 @@ import { v2 as cloudinary } from 'cloudinary';
 
 import authRoutes from './routes/auth.routes.js'; // must put .js at the end
 import userRoutes from './routes/user.routes.js';
+import postRoutes from './routes/post.routes.js';
 
 
 import connectMongoDB from './db/connectMongoDB.js';
@@ -29,6 +30,7 @@ app.use(cookieParser());
 //connecting middleware to process auth routes
 app.use("/api/auth", authRoutes); // it's like collection of similar routes, so the code remains clean and managable
 app.use("/api/users", userRoutes);
+app.use("apu/posts", postRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
